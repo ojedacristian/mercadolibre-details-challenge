@@ -2,17 +2,16 @@ import React from "react";
 import {Container, Stack, Box} from "@chakra-ui/react";
 
 import Routes from "./routes";
+import {Navbar} from "../navbar/Navbar";
 
 const App: React.FC = () => {
   return (
-    <Container alignSelf="center" maxWidth="container.xl" paddingX={0}>
       <Stack>
-        <Box>{`< Navbar />`}</Box>
+        <Navbar/>
         <Box>
           <Routes />
         </Box>
       </Stack>
-    </Container>
   );
 };
 
