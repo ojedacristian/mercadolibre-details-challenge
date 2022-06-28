@@ -1,5 +1,6 @@
-import { Box, Container } from '@chakra-ui/react';
+import { Box, Container, Image } from '@chakra-ui/react';
 import React from 'react'
+import Logo from '../assets/logo.png'
 
 export const Navbar: React.FC = () => {
     return (
@@ -10,8 +11,9 @@ export const Navbar: React.FC = () => {
                 maxWidth='4xl'
                 display='flex'
                 justifyContent='space-between'
+                padding='2em'
             >
-                <div>Logo</div>
+                <Image src={Logo} />
                 <div>Search</div>
                 <div>Promo</div>
             </Container>
