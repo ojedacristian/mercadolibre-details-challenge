@@ -1,17 +1,22 @@
 import React from "react";
-import {Container, Stack, Box} from "@chakra-ui/react";
+import {Stack, Box} from "@chakra-ui/react";
+
+import {Navbar} from "../navbar/Navbar";
+import {Slider} from "../slider/Slider";
+import {PaymentMethod} from "../payment/PaymentMethod";
 
 import Routes from "./routes";
-import {Navbar} from "../navbar/Navbar";
 
 const App: React.FC = () => {
   return (
-      <Stack>
-        <Navbar/>
-        <Box>
-          <Routes />
-        </Box>
-      </Stack>
+    <Stack spacing={0}>
+      <Navbar />
+      <Slider />
+      <PaymentMethod />
+      <Box>
+        <Routes />
+      </Box>
+    </Stack>
   );
 };
 
